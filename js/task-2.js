@@ -5,12 +5,25 @@
 //   { name: 'Lux', active: false },
 // ];
 
-// const toggleUserState = (allUsers, userName, callback) => {
+// // CALLBACK
+
+// // const toggleUserState = (allUsers, userName, callback) => {
+// //   const updatedUsers = allUsers.map(user =>
+// //     user.name === userName ? { ...user, active: !user.active } : user,
+// //   );
+
+// //   callback(updatedUsers);
+// // };
+
+
+// // PROMISE
+
+// const toggleUserState = (allUsers, userName) => {
 //   const updatedUsers = allUsers.map(user =>
 //     user.name === userName ? { ...user, active: !user.active } : user,
 //   );
 
-//   callback(updatedUsers);
+//   return Promise.resolve(updatedUsers);
 // };
 
 // const logger = updatedUsers => console.table(updatedUsers);
